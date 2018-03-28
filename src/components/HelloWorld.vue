@@ -1,15 +1,17 @@
 <template>
   <div class="hello">
    <v-header></v-header>
-    <h2>Essential Links</h2>
-    <el-button>默认按钮</el-button>
-    <el-button type="primary">主要按钮</el-button>
-    <el-button type="text">文字按钮</el-button>
+    <tab-content></tab-content>
+    <v-content></v-content>
+
   </div>
 </template>
 
 <script>
 import header from './header/header.vue'
+import tabContent from './tabContent/tabContent.vue'
+import content from './mainContent/content.vue'
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -17,11 +19,12 @@ export default {
     }
   },
   components: {
-    'v-header': header
+    'v-header': header,
+    'tab-content': tabContent,
+    'v-content': content
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {

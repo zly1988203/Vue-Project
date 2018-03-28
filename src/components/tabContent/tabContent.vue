@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <h1>{{ msg }}</h1>
-  </div>
+    <div>
+     <h2>{{ msg }}</h2>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'v-header',
+  name: 'tab-content',
   data () {
     return {
-      msg: 'welcome to Your V-shop'
+      msg : "I'm tab"
     }
   }
 }
