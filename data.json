@@ -1,0 +1,11 @@
+{
+  "seller": {
+   "name":"迷之大汉堡"
+  },
+  "goods": {
+    "skuId":"1000001"
+  },
+  "ratings":{
+    "ratingId":"100000"
+  }
+}

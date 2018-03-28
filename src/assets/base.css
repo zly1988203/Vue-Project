@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body{max-width: 100%; overflow-x: hidden;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, button { margin: 0; padding: 0; }
+
+body,pre { color: #333333; font-family: "Microsoft YaHei", "微软雅黑", "宋体", Arial, Verdana; font-size: 12px; padding-bottom: 20px; }
+
+img { border: 0 none; }
+
+em, i, u { font-style: normal; }
+
+a { text-decoration: none; color: #666666; }
+
+a:hover { text-decoration: none;  }
+
+li { list-style: none; }
+
+.clearfix:after { content: " "; visibility: hidden; display: block; clear: both; height: 0; font-size: 0; }
+
+.clearfix { clear: both; }
+
+.clear { clear: both; overflow: hidden; }
+
+:focus { outline: medium none; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; background:transparent;}
+
+::-webkit-scrollbar-thumb {background-color: rgba(187, 187, 187, 0.7);border-radius: 6px;}
+
+::-webkit-scrollbar-thumb:vertical:hover { background-color: rgba(153, 153, 153, 0.7); }
+
+::-webkit-scrollbar-thumb:vertical:active { background-color: rgba(153, 153, 153, 0.7); }
+
+::-webkit-scrollbar-button:vertical, ::-webkit-scrollbar-track:vertical { display: none; }
+
+::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track-piece:vertical, ::-webkit-scrollbar-corner:vertical { background-color: transparent; }
+
+.sign-c{color: #ea3939;font-style: normal;font-weight: normal;}
+.a-block{display: inline-block;text-align: center;background:#249cf2;color: #fff;}
+.b-b{border-bottom:1px solid #dedede;}
+.prompt{color: #3890eb;font-style: normal;font-weight: normal;}
