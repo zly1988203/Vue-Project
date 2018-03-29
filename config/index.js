@@ -3,6 +3,8 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+const merge = require('webpack-merge')
+// let proxy = { target: 'http://x.vxiao.cn', changeOrigin: true, pathRewrite: { '^/rest': '/rest' } }
 
 module.exports = {
   dev: {
@@ -10,8 +12,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
-
+    proxyTable: {
+      // proxy all requests starting with /api to jsonplaceholder
+      '/api': {
+        target: 'http://localhost:8088',
+        changeOrigin: true,//true时可用来解决跨域问题
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined

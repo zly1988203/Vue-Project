@@ -88,7 +88,6 @@ export default {
     // /组件写入dom结构了
     console.log('4===mounted===')
     // 基础配置数据
-    this.getData()
   },
   beforeUpdate: function () {
     // /组件更新前

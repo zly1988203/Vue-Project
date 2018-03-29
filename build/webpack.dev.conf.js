@@ -10,37 +10,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-// mock数据
-// const appData = require('../src/components/mainContent/data.json')
-// const seller = appData.seller
-// const goods = appData.goods
-// const ratings = appData.ratings
-// const express = require('express')
-// const app = express()
-// const apiRouter = express.Router()
-//
-// apiRouter.get('/seller', (req, res) => {
-//   res.json({
-//     errno: 0,
-//     data: seller
-//   })
-// })
-//
-// apiRouter.get('/goods', (req, res) => {
-//   res.json({
-//     errno: 0,
-//     data: goods
-//   })
-// })
-//
-// apiRouter.get('/rating', (req, res) => {
-//   res.json({
-//     errno: 0,
-//     data: ratings
-//   })
-// })
-//
-// app.use('/api',apiRouter)
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
