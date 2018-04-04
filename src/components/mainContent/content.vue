@@ -28,7 +28,6 @@ export default {
       let that = this
       this.$http.get('../../../../static/data.json')
         .then((res) => {
-          debugger
           that.sellerInfo = res.data.seller
           console.log(that.sellerInfo.name)
         })

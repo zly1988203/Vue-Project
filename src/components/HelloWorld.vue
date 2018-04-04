@@ -1,12 +1,10 @@
 <template>
   <div class="hello">
-   <v-header></v-header>
+    <v-header></v-header>
     <tab-content></tab-content>
     <v-content></v-content>
-
   </div>
 </template>
-
 <script>
 import header from './header/header.vue'
 import tabContent from './tabContent/tabContent.vue'

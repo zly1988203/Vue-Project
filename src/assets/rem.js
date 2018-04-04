@@ -1,5 +1,4 @@
-window.onload = function() {
-        console.time("test");
+window.onload = function () {
         /*
             # 按照宽高比例设定html字体, width=device-width initial-scale=1版
             # @pargam  win 窗口window对象
@@ -14,10 +13,10 @@ window.onload = function() {
             # ps:请尽量第一时间运行此js计算字体
         */
         !function(win, option) {
-          var count = 0, 
-              designWidth = option.designWidth, 
-              designHeight = option.designHeight || 0, 
-              designFontSize = option.designFontSize || 20, 
+          var count = 0,
+              designWidth = option.designWidth,
+              designHeight = option.designHeight || 0,
+              designFontSize = option.designFontSize || 20,
               callback = option.callback || null,
               root = document.documentElement,
               body = document.body,
@@ -59,5 +58,5 @@ window.onload = function() {
           callback: function (argument) {
             console.timeEnd("test")
           }
-        });
-};
+        })
+}

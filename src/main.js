@@ -14,6 +14,7 @@ Vue.prototype.$http = axios
 
 require('./assets/rem.js')
 require('./assets/base.css')
+
 /* eslint-disable no-new */
 new Vue({
   router

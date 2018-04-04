@@ -4,12 +4,13 @@
 </template>
 <script>
 export default {
-  name: 'goods-info',
-  data () {
-    return {
+    name: 'seller',
+    data () {
+      return {
+      }
     }
-  }
 }
 </script>
 <style scoped>
+
 </style>
