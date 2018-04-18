@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="seller">商家
     </div>
 </template>
 <script>

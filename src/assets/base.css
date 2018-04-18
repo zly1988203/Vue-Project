@@ -105,3 +105,20 @@ li { list-style: none; }
   padding-left: 0.1rem;
 }
 
+.container {
+  flex: 1 0 auto;
+  padding: 0.1rem;
+  /*padding-left: 1.64rem;*/
+  /*padding-right: 1.64rem;*/
+}
+
+.decoration{
+  background-color:#eee;
+  height:2px;
+  background-repeat:repeat;
+  border-bottom:solid 1px #FFFFFF;
+  margin-bottom:20px;
+  display:block;
+  width:100%;
+  clear:both;
+}

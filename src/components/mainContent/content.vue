@@ -1,10 +1,22 @@
 <template>
-    <div>
-      <h1>{{ msg }}</h1>
-      <el-button>默认按钮</el-button>
-      <el-button type="primary">主要按钮</el-button>
-      <el-button type="text">文字按钮</el-button>
-    </div>
+  <section id='foot_guide'>
+    <section @click = "gotoAddress({path: '/msite', query: {geohash}})" class="guide_item">
+      <span class="icon-home"></span>
+      <span>外卖</span>
+    </section>
+    <section @click = "gotoAddress({path: '/search/geohash'})" class="guide_item">
+      <span class="icon-home"></span>
+      <span>搜索</span>
+    </section>
+    <section @click = "gotoAddress('/order')" class="guide_item">
+      <span class="icon-home"></span>
+      <span>订单</span>
+    </section>
+    <section @click = "gotoAddress('/profile')" class="guide_item">
+      <span class="icon-home"></span>
+      <span>我的</span>
+    </section>
+  </section>
 </template>
 
 <script>
@@ -39,6 +51,29 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  @import "../../assets/mixin";
+  #foot_guide{
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include wh(100%, 0.9rem);
+    display: flex;
+    box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);
+  }
+  .guide_item {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    .icon-home {
+      @include sc(.45rem,#ccc);
+      margin-top: .1rem;
+      fill: #ccc;
+    }
+  }
 </style>

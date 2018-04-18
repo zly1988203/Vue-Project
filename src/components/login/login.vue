@@ -23,7 +23,7 @@
           </el-form-item>
           <el-form-item>
             <el-row>
-              <el-col :span="22">
+              <el-col :span="21">
                 <el-button  v-on:click = "doLogin" type="primary" size="medium" v-bind:disabled="formData.btnDisabled">登录</el-button>
                 <el-button type="text">忘记密码</el-button>
               </el-col>

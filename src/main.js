@@ -14,6 +14,8 @@ Vue.prototype.$http = axios
 
 require('./assets/rem.js')
 require('./assets/base.css')
+require('./assets/icomoon/style.css')
+require('../static/cn.js')
 
 /* eslint-disable no-new */
 new Vue({
