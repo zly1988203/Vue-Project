@@ -56,7 +56,7 @@ window.onload = function () {
           designWidth: 750,
           designFontSize: 100,
           callback: function (argument) {
-            console.timeEnd("test")
+            console.timeEnd("ok")
           }
         })
 }

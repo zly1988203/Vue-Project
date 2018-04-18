@@ -2,13 +2,15 @@
   <div id="tab-content">
       <div class="tab">
         <div class="tab-item">
-          <span class="icon-home"></span>
+          <span class="icon-cart"></span>
           <router-link to="/goods">商品</router-link>
         </div>
         <div class="tab-item">
+          <span class="icon-file-text"></span>
           <router-link to="/ratings">评论</router-link>
         </div>
         <div class="tab-item">
+          <span class="icon-qrcode"></span>
           <router-link to="/seller">商家</router-link>
         </div>
       </div>

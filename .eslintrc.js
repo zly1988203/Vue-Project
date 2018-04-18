@@ -26,6 +26,8 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // 关于缩进配置 遵循webStrom的缩进规则
-    'indent' : 0
+    'indent' : 0,
+    // 关于函数方法名前面是否要有一个空格 关闭  nav
+    'space-before-function-paren' : 'off',
   }
 }

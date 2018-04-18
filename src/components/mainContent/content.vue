@@ -5,15 +5,15 @@
       <span>外卖</span>
     </section>
     <section @click = "gotoAddress({path: '/search/geohash'})" class="guide_item">
-      <span class="icon-home"></span>
+      <span class="icon-search"></span>
       <span>搜索</span>
     </section>
     <section @click = "gotoAddress('/order')" class="guide_item">
-      <span class="icon-home"></span>
+      <span class="icon-list2"></span>
       <span>订单</span>
     </section>
     <section @click = "gotoAddress('/profile')" class="guide_item">
-      <span class="icon-home"></span>
+      <span class="icon-user"></span>
       <span>我的</span>
     </section>
   </section>
@@ -70,10 +70,15 @@ export default {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    .icon-home {
+    .icon-home, .icon-search ,.icon-user ,.icon-list2 {
       @include sc(.45rem,#ccc);
       margin-top: .1rem;
       fill: #ccc;
+    }
+    .icon-home, .icon-search ,.icon-user ,.icon-list2 :active {
+      @include sc(.45rem,#ccc);
+      margin-top: .1rem;
+      fill: #999;
     }
   }
 </style>
