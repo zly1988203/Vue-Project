@@ -20,35 +20,34 @@
 </template>
 
 <script>
-export default {
-  name: 'v-content',
-  data () {
-    return {
-      sellerInfo: {},
-      msg: 'content'
-    }
-  },
-  created () {
-  },
-  mounted () {
-    this.getSeller()
-  },
-  components: {
-  },
-  methods: {
-    getSeller () {
-      let that = this
-      this.$http.get('../../../../static/data.json')
-        .then((res) => {
-          that.sellerInfo = res.data.seller
-          console.log(that.sellerInfo.name)
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
+  export default {
+    name: 'foot_tab',
+    data () {
+      return {
+        sellerInfo: {}
+      }
+    },
+    created () {
+    },
+    mounted () {
+      this.getSeller()
+    },
+    components: {
+    },
+    methods: {
+      getSeller () {
+        let that = this
+        this.$http.get('../../../../static/data.json')
+          .then((res) => {
+            that.sellerInfo = res.data.seller
+            console.log(that.sellerInfo.name)
+          })
+          .catch(function (error) {
+            console.log(error)
+          })
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>

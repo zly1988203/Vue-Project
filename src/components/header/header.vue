@@ -1,16 +1,30 @@
 <template>
   <div id="c-header">
-    <div class="banner">
-      <img src="../../assets/img/002.png" alt="img"/>
-    </div>
-    <div class="detail">
-        <div class="address">商家地址：深圳市深南大道1006号</div>
-        <div class="info">
-          <span class="">评分：8.6分</span>
-          <span class="tel">联系电话：18521458563</span>
+      <div class="tab">
+        <div class="icon-item">
+          <span class="icon-cart"></span>
         </div>
-    </div>
+        <div class="icon-item">
+          <span class="icon-cart"></span>
+        </div>
+        <div class="icon-item">
+          <span class="icon-cart"></span>
+        </div>
 
+        <div class="tab-item">
+          <router-link to="/mainPhoto">首页</router-link>
+        </div>
+        <div class="tab-item">
+          <router-link to="/categoryPage">分类</router-link>
+        </div>
+        <div class="tab-item">
+          <router-link to="/ratings">专题</router-link>
+        </div>
+        <div class="tab-item">
+          <router-link to="/live">Live Photos</router-link>
+        </div>
+      </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -26,29 +40,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import "../../assets/mixin";
   #c-header {
-    .banner {
-      position: relative;
-      img {
-        width: 100%;
-        display: block;
+    .tab {
+      display: flex;
+      @include wh(100%, 0.4rem);
+      line-height: 0.4rem;
+      .tab-item {
+        flex: 1;
+        text-align: center;
+        border-bottom: 1px solid #cccccc;
       }
-    }
-    .detail{
-      vertical-align:center;
-      text-align: left;
-      display: inline-block;
-      width: 100%;
-      .address {
-        text-align: left;
-        padding: 0.2rem;
-        font-weight: 600;
-      }
-      .info{
-        padding: 0.2rem;
-        .tel{
-          margin-left: 2rem;
-        }
+      .icon-item{
+        flex: 0.4;
+        align-items:center;/*指定垂直居中*/
+        text-align: center;
+        border-bottom: 1px solid #cccccc;
+        line-height: 0.4rem;
       }
     }
   }

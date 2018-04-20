@@ -117,8 +117,36 @@ li { list-style: none; }
   height:2px;
   background-repeat:repeat;
   border-bottom:solid 1px #FFFFFF;
-  margin-bottom:20px;
+  margin-bottom:0.1rem;
   display:block;
   width:100%;
   clear:both;
 }
+
+.seachTools {
+  @include wh(100 %, 0.4 rem);
+  line-height: 0.4rem;
+  /*display: inline-flex;*/
+}
+.header_device{
+  float: left;
+}
+.seach_device {
+  float: right;
+  line-height: 0.3rem;
+  border: 1px solid #677bf1;
+}
+.seach_device input {
+  border: 0px;
+}
+.seach_device input[type='text'] {
+  border: 0px;
+@include wh(2rem, 0.28rem);
+}
+.seach_device input[type='button'] {
+  background: #677bf1;
+  color: #ffffff;
+@include wh(0.4rem, 0.3rem);
+  line-height: 0.3rem;
+}
+

@@ -9,10 +9,6 @@
           <span class="icon-file-text"></span>
           <router-link to="/ratings">评论</router-link>
         </div>
-        <div class="tab-item">
-          <span class="icon-qrcode"></span>
-          <router-link to="/seller">商家</router-link>
-        </div>
       </div>
       <router-view></router-view>
   </div>
