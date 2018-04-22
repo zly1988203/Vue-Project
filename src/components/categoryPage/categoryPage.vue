@@ -97,6 +97,7 @@ export default {
       }
       .c-right{
         width: 80%;
+        margin-top: .1rem;
       }
     .type-title{
       font-weight: 500;

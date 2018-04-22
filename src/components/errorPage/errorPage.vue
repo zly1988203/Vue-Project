@@ -1,5 +1,6 @@
 <template>
   <div class="error-content">
+    <v-header></v-header>
     <div class="error-img"><img src="../../assets/img/404.png" height="275" width="338"/></div>
     <div class="error-msg">即将离开本页，<a href="#">3</a>秒后自动返回上一页</div>
     <div class="error-btn"> <input type="button" value="立即返回"/></div>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+  import header from '../header/header.vue'
     export default {
-        name: 'error-page'
+      components: {
+        'v-header': header
+      },
+      name: 'error-page'
     }
 </script>
 
@@ -36,6 +41,7 @@
     border-radius: 5px;
     border:1px solid #677bf1;
     margin-top: 0.3rem;
+    font-size:0.2rem;
   }
 
 </style>

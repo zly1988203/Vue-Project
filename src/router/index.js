@@ -11,6 +11,7 @@ import mainPhoto from '@/components/mainPhoto/mainPhoto'
 import errorPage from '@/components/errorPage/errorPage'
 import categoryPage from '@/components/categoryPage/categoryPage'
 import imgContent from '@/components/imgContent/imgContent'
+import searchResult from '@/components/searchResult/searchResult'
 Vue.use(Router)
 
 export default new Router({
@@ -81,7 +82,11 @@ export default new Router({
       path: '/personInfo',
       name: 'personInfo',
       component: personInfo
+    },
+    {
+      path: '/searchResult',
+      name: 'searchResult',
+      component: searchResult
     }
-
   ]
 })
