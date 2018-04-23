@@ -11,7 +11,7 @@
             </select>
           </div>
           <div class="seach_device">
-            <input type="text" placeholder="搜索壁纸"><input type="button" value="搜索">
+            <input type="text" placeholder="搜索壁纸"><input type="button" value="搜索" @click="searchPhoto()">
           </div>
         </div>
 
@@ -92,6 +92,11 @@ export default {
     }
   },
   comments: {
+  },
+  methods: {
+    searchPhoto() {
+      this.$router.push('/searchResult')
+    }
   }
 }
 </script>
@@ -140,6 +145,5 @@ export default {
         }
       }
     }
-
   }
 </style>
