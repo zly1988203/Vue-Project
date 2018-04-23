@@ -1,16 +1,9 @@
 <template>
   <div id="c-header">
     <div class="tab">
-      <div class="icon-item">
+      <div class="icon-item" @click="backPage()">
         <span class="icon-cart"></span>
       </div>
-      <div class="icon-item">
-        <span class="icon-cart"></span>
-      </div>
-      <div class="icon-item">
-        <span class="icon-cart"></span>
-      </div>
-
       <div class="tab-item">
         <router-link to="/mainPhoto">首页</router-link>
       </div>
@@ -35,6 +28,11 @@ export default {
     }
   },
   components: {
+  },
+  methods: {
+      backPage() {
+        this.$router.push('/seller')
+      }
   }
 }
 </script>

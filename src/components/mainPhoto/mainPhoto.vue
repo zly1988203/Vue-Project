@@ -84,6 +84,7 @@
 </template>
 
 <script>
+  import imgContent from '../imgContent/imgContent.vue'
 export default {
     name: 'main-photo',
   data () {
@@ -92,6 +93,7 @@ export default {
     }
   },
   comments: {
+      'img-content': imgContent
   },
   methods: {
     searchPhoto() {

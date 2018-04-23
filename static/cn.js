@@ -26,7 +26,7 @@ export const jsonData = {
       name: '北冰洋',
       descrip: '所发生的发生的房',
       price: 2.99
-    },
+    }
   ],
   shopList: [
     {
@@ -39,7 +39,19 @@ export const jsonData = {
       id: '111111',
       name: '7-11',
       descrip: '便利店啧啧啧',
-      address: '深圳市宝安区深南大道6009-3号'
+      address: '深圳市宝安区3'
+    },
+    {
+      id: '2222222',
+      name: '友琪',
+      descrip: '便利店啧啧啧',
+      address: '深圳市宝安区宝安大道555号'
+    },
+    {
+      id: '333333',
+      name: '美宜佳',
+      descrip: '便利店啧啧啧',
+      address: '深圳市宝安区西乡大道666号'
     }
   ]
 }

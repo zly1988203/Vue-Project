@@ -58,6 +58,7 @@
 <style scoped lang="scss">
   .recent-content {
     display: inline-grid;
+    float: left;
     .top-cont {
       display: inline-flex;
       img {

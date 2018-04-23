@@ -8,16 +8,19 @@
         <el-header>
           <span>推荐商家</span>
         </el-header>
-        <el-container>
           <div class="container">
             <div class="content">
               <div class="recent-content" v-for="(item,index) in shopList" :key="item.id" @click="viewShop(item)">
                 <div class="top-cont">
                   <img src="../../assets/img/001.jpg"/>
                   <div class="recent-text">
-                    <p>
-                      {{index}}-{{item.descrip}}
-                    </p>
+                    <div>
+                      {{item.descrip}}
+                    </div>
+                    <div>
+                      <i class="icon-location2"></i>
+                      <label>{{item.address}}</label>
+                    </div>
                   </div>
                 </div>
                 <div class="recent-bottom">
@@ -25,16 +28,17 @@
                     <img src="../../assets/img/user.png" alt="img">
                     <label>{{item.name}}</label>
                   </div>
-                  <div class="txt-right">
-                    <label>￥{{item.price}}</label>
-                  </div>
                 </div>
                 <div class="decoration"></div>
               </div>
 
             </div>
+            <!--<div class="load-more">-->
+              <!--<i class="icon-search"></i>-->
+              <!--加载更多..........-->
+            <!--</div>-->
           </div>
-        </el-container>
+
       </div>
     </div>
     <foot-tab></foot-tab>
@@ -67,9 +71,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  @import "../../assets/mixin";
   #seller {
     .recent-content {
       display: inline-grid;
+      float: left;
       .top-cont {
         display: inline-flex;
         img {
@@ -114,6 +120,9 @@ export default {
         }
       }
 
+    }
+    .load-more{
+      @include wh(100%,0.1rem)
     }
   }
 </style>

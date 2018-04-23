@@ -1,8 +1,11 @@
 <template>
     <div id="goodsDetail" class="container">
       <div class="content">
+        <div class="banner">
+
+        </div>
       <div>{{goodsDetail.name}}</div>
-      <div>{{goodsDetail.price}}</div>
+      <div class="goods-price">￥{{goodsDetail.price}}</div>
       <div>{{goodsDetail.descrip}}</div>
       </div>
     </div>
@@ -29,6 +32,14 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  @import "../../assets/mixin";
+  #goodsDetail{
+    .banner{
+      @include wh(100%,1rem);
+    }
+    .goods-price{
+      @include sc(0.3rem, #ff0e0b)
+    }
+  }
 </style>
