@@ -11,6 +11,7 @@ import mainPhoto from '@/components/mainPhoto/mainPhoto'
 import errorPage from '@/components/errorPage/errorPage'
 import categoryPage from '@/components/categoryPage/categoryPage'
 import imgContent from '@/components/imgContent/imgContent'
+import shop from '@/components/shop/shop'
 Vue.use(Router)
 
 export default new Router({
@@ -20,16 +21,6 @@ export default new Router({
       name: 'index',
       component: index,
       children: [
-        {
-          path: '/goods',
-          name: 'goodsInfo',
-          component: goodsInfo
-        },
-        {
-          path: '/ratings',
-          name: 'ratings',
-          component: ratings
-        },
         {
           path: '/mainPhoto',
           name: 'mainPhoto',
@@ -42,11 +33,7 @@ export default new Router({
             }
           ]
         },
-        {
-          path: '/seller',
-          name: 'seller',
-          component: seller
-        },
+
         {
           path: '/categoryPage',
           name: 'categoryPage',
@@ -61,7 +48,29 @@ export default new Router({
         }
       ]
     },
+    {
+      path: '/seller',
+      name: 'seller',
+      component: seller
+    },
 
+    {
+      path: '/shop',
+      name: 'shop',
+      component: shop,
+      children: [
+        {
+          path: '/goods',
+          name: 'goodsInfo',
+          component: goodsInfo
+        },
+        {
+          path: '/ratings',
+          name: 'ratings',
+          component: ratings
+        }
+      ]
+    },
     {
       path: '/goodsDetail',
       name: 'goodsDetail',

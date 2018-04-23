@@ -6,6 +6,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
 import axios from 'axios'
+import store from '../store/'
 
 Vue.config.productionTip = false
 Vue.use(router)
@@ -19,5 +20,6 @@ require('../static/cn.js')
 
 /* eslint-disable no-new */
 new Vue({
+  store,
   router
 }).$mount('#main')

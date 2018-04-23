@@ -21,7 +21,7 @@
 
 <script>
   export default {
-    name: 'foot_tab',
+    name: 'foot-tab',
     data () {
       return {
         sellerInfo: {}
