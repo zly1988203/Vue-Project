@@ -1,13 +1,13 @@
 <template>
   <div>
     <div id="seller">
-        <el-header>
+        <header>
           <span>welcome to V_Shop</span>
-        </el-header>
+        </header>
       <div>
-        <el-header>
+        <header>
           <span>推荐商家</span>
-        </el-header>
+        </header>
           <div class="container">
             <div class="content">
               <div class="recent-content" v-for="(item,index) in shopList" :key="item.id" @click="viewShop(item)">

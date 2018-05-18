@@ -12,6 +12,9 @@ import errorPage from '@/components/errorPage/errorPage'
 import categoryPage from '@/components/categoryPage/categoryPage'
 import shop from '@/components/shop/shop'
 import order from '@/components/order/order'
+import bus from '@/components/bus'
+import tab_swp from '@/components/tab_swp'
+
 Vue.use(Router)
 
 export default new Router({
@@ -81,7 +84,16 @@ export default new Router({
       path: '/order',
       name: 'order',
       component: order
+    },
+    {
+      path: '/bus',
+      name: 'bus',
+      component: bus
+    },
+    {
+      path: '/tab_swp',
+      name: 'tab_swp',
+      component: tab_swp
     }
-
   ]
 })

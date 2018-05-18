@@ -1,5 +1,9 @@
 <template>
   <div id="tab-content">
+    <nav>
+      <i class="el-icon--left"></i>
+      <span>店铺</span>
+    </nav>
     <div class="tab">
       <div class="tab-item">
         <span class="icon-cart"></span>

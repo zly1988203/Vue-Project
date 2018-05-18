@@ -1,18 +1,18 @@
 <template>
   <section id='foot_guide'>
-    <section @click = "gotoAddress({path: '/seller', query: {geohash}})" class="guide_item">
+    <section @click = "gotoAddress({path: '/seller'},$event)"  class="guide_item" :class="{active:clickEl}">
       <span class="icon-home"></span>
       <span>外卖</span>
     </section>
-    <section @click = "gotoAddress({path: '/index'})" class="guide_item">
+    <section @click = "gotoAddress({path: '/index'},$event)" class="guide_item">
       <span class="icon-search"></span>
       <span>发现</span>
     </section>
-    <section @click = "gotoAddress('/order')" class="guide_item">
+    <section @click = "gotoAddress('/order',$event)" class="guide_item">
       <span class="icon-list2"></span>
       <span>订单</span>
     </section>
-    <section @click = "gotoAddress('/personInfo')" class="guide_item">
+    <section @click = "gotoAddress('/personInfo',$event)" class="guide_item">
       <span class="icon-user"></span>
       <span>我的</span>
     </section>
@@ -24,7 +24,8 @@
     name: 'foot-tab',
     data () {
       return {
-        sellerInfo: {}
+        sellerInfo: {},
+        clickEl: true
       }
     },
     created () {
@@ -46,7 +47,7 @@
             console.log(error)
           })
       },
-      gotoAddress(path){
+      gotoAddress(path, event) {
         this.$router.push(path)
       }
     }
@@ -83,5 +84,10 @@
       margin-top: .1rem;
       fill: #999;
     }
+
   }
+  .active{
+    color: #677bf1;
+  }
+
 </style>

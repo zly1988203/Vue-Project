@@ -1,4 +1,4 @@
-# vue_project
+npm uninstall 模块 --save-dev 删除模块# vue_project
 
 > vue_project app
 
