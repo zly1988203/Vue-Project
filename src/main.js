@@ -4,10 +4,13 @@ import Vue from 'vue'
 import router from './router'
 import axios from 'axios'
 import store from '../store/'
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
 
 Vue.config.productionTip = false
 Vue.use(router)
 Vue.prototype.$http = axios
+Vue.use(MintUI)
 
 require('./assets/rem.js')
 require('./assets/base.css')

@@ -53,6 +53,13 @@ export const jsonData = {
       descrip: '便利店啧啧啧',
       address: '深圳市宝安区西乡大道666号'
     }
+  ],
+  bannerList: [
+    {id: '000', name: '', url: '/src/assets/img/banner/316965.jpg'},
+    {id: '001', name: '', url: '/src/assets/img/banner/319373.jpg'},
+    {id: '002', name: '', url: '/src/assets/img/banner/319494.jpg'},
+    {id: '003', name: '', url: '/src/assets/img/banner/319879.jpg'},
+    {id: '004', name: '', url: '/src/assets/img/banner/320353.jpg'}
   ]
 }
 

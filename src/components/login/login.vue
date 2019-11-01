@@ -1,45 +1,29 @@
 <template>
-  <el-container
-    v-loading="loading"
-    element-loading-text="正在登录，请稍等......."
-    element-loading-spinner="el-icon-loading"
-    element-loading-background="rgba(0, 0, 0, 0.8)"
-  >
-    <el-header height="100px">
-      <el-row  type="flex" justify="center" align="bottom">
-        <el-col :span="6"><div cclass="grid-content bg-purple">
-          <h1>V-Shop</h1>
-        </div></el-col>
-      </el-row>
-    </el-header>
-    <el-main>
+  <div class="container">
+    <mt-header fixed title="V-shop"></mt-header>
       <div class="login">
-        <el-form ref="form">
-          <el-form-item>
-            <el-input type="text" v-model="formData.username" placeholder="请输入手机号码或用户名"></el-input>
-          </el-form-item>
-          <el-form-item>
-            <el-input type="password" v-model="formData.passwd" placeholder="请输入密码"></el-input>
-          </el-form-item>
-          <el-form-item>
-            <el-row>
-              <el-col :span="21">
-                <el-button  v-on:click = "doLogin" type="primary" size="medium" v-bind:disabled="formData.btnDisabled">登录</el-button>
-                <el-button type="text">忘记密码</el-button>
-              </el-col>
-              <el-col :span="2"> <el-button type="text">注册</el-button></el-col>
-            </el-row>
-          </el-form-item>
-          <el-form-item>
-            <div class="top-tips"> {{ formData.tipMsg }} </div>
-          </el-form-item>
-        </el-form>
+        <div class="v-inp">
+          <input type="text" v-model="formData.username" placeholder="请输入手机号码或用户名">
+        </div>
+        <div class="v-inp">
+          <input type="password" v-model="formData.passwd" placeholder="请输入密码">
+        </div>
+        <div>
+          <div>
+            <mt-button type="primary" v-on:click = "doLogin" size="large" v-bind:disabled="formData.btnDisabled">登录</mt-button>
+          </div>
+          <div> <mt-button plain icon="back">忘记密码</mt-button></div>
+        </div>
+          <!--<div class="top-tips"> {{ formData.tipMsg }} </div>-->
       </div>
-    </el-main>
-  </el-container>
+  </div>
+
 </template>
 
 <script>
+  import { Header } from 'mint-ui'
+  import { Button } from 'mint-ui'
+  import { Toast } from 'mint-ui'
 export default {
   name: 'login',
   data () {
@@ -56,9 +40,8 @@ export default {
   methods: {
     doLogin () {
       this.formData.btnDisabled = true
-      this.loading = true
+      Toast('提示信息')
       setTimeout(() => {
-        this.loading = false
         this.formData.btnDisabled = false
       }, 2000)
     },
@@ -116,4 +99,17 @@ export default {
   align-content: center;
   color: red;
 }
+  .container{
+    margin-top: 1rem;
+  }
+ .head{
+   margin: 0.2rem;
+ }
+  .v-inp{
+    margin: 0.2rem;
+  }
+  .v-inp input{
+    height: 1rem;
+    border-bottom: 1px solid  #f1f1f1;
+  }
 </style>

@@ -1,17 +1,17 @@
 <template>
   <div id="c-header">
     <div class="tab">
-      <div class="icon-item" @click="backPage()">
-        <span class="icon-cart"></span>
-      </div>
       <div class="tab-item">
-        <router-link to="/mainPhoto">首页</router-link>
+        <router-link to="/seller">首页</router-link>
       </div>
       <div class="tab-item">
         <router-link to="/categoryPage">分类</router-link>
       </div>
       <div class="tab-item">
         <router-link to="/categoryPage">专题</router-link>
+      </div>
+      <div class="tab-item">
+        <router-link to="/mainPhoto">专题</router-link>
       </div>
       <!--<div class="tab-item">-->
         <!--<router-link to="/live">Live Photos</router-link>-->

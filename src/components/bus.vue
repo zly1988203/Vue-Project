@@ -18,7 +18,7 @@
         </div>
       </header>
       <div class="msg-content">
-        <section class="title">由中交出行&amp;江南出行联合推出合规网约车服</section>
+        <section class="title">合规网约车服</section>
         <div class="decoration"></div>
         <section class="tips">附近有<span>15</span>辆车，可以马上接驾</section>
       </div>
