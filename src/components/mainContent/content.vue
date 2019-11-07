@@ -38,7 +38,7 @@ export default {
   methods: {
     getSeller () {
       let that = this
-      this.$http.get('../../../../static/data.json')
+      this.$http.get('/static/data.json')
         .then((res) => {
           that.sellerInfo = res.data.seller
           console.log(that.sellerInfo.name)

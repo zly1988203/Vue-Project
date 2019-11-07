@@ -18,7 +18,7 @@ a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, 
 
 body {
   background-color: #fff;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   height: 100%;

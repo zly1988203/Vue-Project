@@ -13,7 +13,7 @@
         <div class="content">
           <div class="recent-content" v-for="(item,index) in shopList" :key="item.id" @click="viewShop(item)">
             <div class="top-cont">
-              <img src="../../assets/img/001.jpg"/>
+              <img src="/static/img/001.jpg"/>
               <div class="recent-text">
                 <div>
                   {{item.descrip}}
@@ -26,7 +26,7 @@
             </div>
             <div class="recent-bottom">
               <div class="bo-cont">
-                <img src="../../assets/img/user.png" alt="img">
+                <img src="/static/img/user.png" alt="img">
                 <label>{{item.name}}</label>
               </div>
             </div>
@@ -42,7 +42,6 @@
   import {mapState, mapMutations} from 'vuex'
   import jsonData from '../../../static/cn'
   import footTab from '../footTab/footTab.vue'
-  // import { Swipe, SwipeItem } from 'mint-ui'
 export default {
   name: 'seller',
     data () {
@@ -73,7 +72,11 @@ export default {
       top: 0;
       width: 100%;
       left: 0;
-      height: 2rem;
+      height: 3rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
     .content{
       width: 100%;

@@ -97,7 +97,7 @@
         top: .18rem;
         left: .19rem;
         padding-left: .66rem;
-        background: url(../assets/img/header/icon-user.png) no-repeat 0;
+        background: url(/static/img/header/icon-user.png) no-repeat 0;
         background-size: auto 100%;
       }
       .avatar:after {
@@ -114,7 +114,7 @@
         .thumb {
           padding-top: 25.2%;
           height: 0;
-          background: url(../assets/img/header/bg.png) no-repeat 50%;
+          background: url(/static/img/header/bg.png) no-repeat 50%;
           background-size: 100% 100%;
         }
         /*nav{*/
@@ -288,7 +288,7 @@
           margin: 0 .29rem 0 .27rem;
           width: .58rem;
           height: .58rem;
-          background: url(../assets/img/header/icon-exchange.png) 50% no-repeat;
+          background: url(/static/img/header/icon-exchange.png) 50% no-repeat;
           background-size: 100% 100%;
         }
 

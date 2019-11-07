@@ -20,20 +20,20 @@
         <div class="tit-type"><span>每日最新壁纸</span><a href="index.php?a=list_one&gid=0" class="fr">更多></a></div>
         <div class="img-list">
           <div class="img-header">
-            <img src="../../assets/img/13570528,320,480.jpg"/>
+            <img src="/static/img/13570528,320,480.jpg"/>
           </div>
           <div class="img-content">
             <div class="img-li1">
-              <img src="../../assets/img/14177121,320,480.jpg"/>
-              <img src="../../assets/img/13597063,320,480.jpg"/>
-              <img src="../../assets/img/13582642,320,480.jpg"/>
-              <img src="../../assets/img/13570528,320,480.jpg"/>
+              <img src="/static/img/14177121,320,480.jpg"/>
+              <img src="/static/img/13597063,320,480.jpg"/>
+              <img src="/static/img/13582642,320,480.jpg"/>
+              <img src="/static/img/13570528,320,480.jpg"/>
             </div>
             <div class="img-li2">
-              <img src="../../assets/img/14177121,320,480.jpg"/>
-              <img src="../../assets/img/13597063,320,480.jpg"/>
-              <img src="../../assets/img/13582642,320,480.jpg"/>
-              <img src="../../assets/img/13570528,320,480.jpg"/>
+              <img src="/static/img/14177121,320,480.jpg"/>
+              <img src="/static/img/13597063,320,480.jpg"/>
+              <img src="/static/img/13582642,320,480.jpg"/>
+              <img src="/static/img/13570528,320,480.jpg"/>
             </div>
           </div>
         </div>
@@ -62,20 +62,20 @@
         </div>
         <div class="img-list">
           <div class="img-header">
-            <img src="../../assets/img/14177121,320,480.jpg" height="480" width="320"/>
+            <img src="/static/img/14177121,320,480.jpg" height="480" width="320"/>
           </div>
           <div class="img-content">
             <div class="img-li1">
-              <img src="../../assets/img/14177121,320,480.jpg" height="480" width="320"/>
-              <img src="../../assets/img/13597063,320,480.jpg" height="480" width="320"/>
-              <img src="../../assets/img/13582642,320,480.jpg" height="480" width="320"/>
-              <img src="../../assets/img/13570528,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/14177121,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/13597063,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/13582642,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/13570528,320,480.jpg" height="480" width="320"/>
             </div>
             <div class="img-li2">
-              <img src="../../assets/img/14177121,320,480.jpg" height="480" width="320"/>
-              <img src="../../assets/img/13597063,320,480.jpg" height="480" width="320"/>
-              <img src="../../assets/img/13582642,320,480.jpg" height="480" width="320"/>
-              <img src="../../assets/img/13570528,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/14177121,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/13597063,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/13582642,320,480.jpg" height="480" width="320"/>
+              <img src="/static/img/13570528,320,480.jpg" height="480" width="320"/>
             </div>
           </div>
         </div>

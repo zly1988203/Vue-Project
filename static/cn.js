@@ -55,11 +55,11 @@ export const jsonData = {
     }
   ],
   bannerList: [
-    {id: '000', name: '', url: '/src/assets/img/banner/316965.jpg'},
-    {id: '001', name: '', url: '/src/assets/img/banner/319373.jpg'},
-    {id: '002', name: '', url: '/src/assets/img/banner/319494.jpg'},
-    {id: '003', name: '', url: '/src/assets/img/banner/319879.jpg'},
-    {id: '004', name: '', url: '/src/assets/img/banner/320353.jpg'}
+    {id: '000', name: '', url: '/static/img/banner/316965.jpg'},
+    {id: '001', name: '', url: '/static/img/banner/319373.jpg'},
+    {id: '002', name: '', url: '/static/img/banner/319494.jpg'},
+    {id: '003', name: '', url: '/static/img/banner/319879.jpg'},
+    {id: '004', name: '', url: '/static/img/banner/320353.jpg'}
   ]
 }
 

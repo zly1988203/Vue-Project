@@ -1,20 +1,20 @@
 <template>
   <div class="img-list">
     <div class="img-header">
-      <img src="../../assets/img/13570528,320,480.jpg"/>
+      <img src="/static/img/13570528,320,480.jpg"/>
     </div>
     <div class="img-content">
       <div class="img-li1">
-        <img src="../../assets/img/14177121,320,480.jpg"/>
-        <img src="../../assets/img/13597063,320,480.jpg"/>
-        <img src="../../assets/img/13582642,320,480.jpg"/>
-        <img src="../../assets/img/13570528,320,480.jpg"/>
+        <img src="/static/img/14177121,320,480.jpg"/>
+        <img src="/static/img/13597063,320,480.jpg"/>
+        <img src="/static/img/13582642,320,480.jpg"/>
+        <img src="/static/img/13570528,320,480.jpg"/>
       </div>
       <div class="img-li2">
-        <img src="../../assets/img/14177121,320,480.jpg"/>
-        <img src="../../assets/img/13597063,320,480.jpg"/>
-        <img src="../../assets/img/13582642,320,480.jpg"/>
-        <img src="../../assets/img/13570528,320,480.jpg"/>
+        <img src="/static/img/14177121,320,480.jpg"/>
+        <img src="/static/img/13597063,320,480.jpg"/>
+        <img src="/static/img/13582642,320,480.jpg"/>
+        <img src="/static/img/13570528,320,480.jpg"/>
       </div>
     </div>
   </div>

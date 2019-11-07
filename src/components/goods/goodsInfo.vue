@@ -3,7 +3,7 @@
     <div class="content">
       <div class="recent-content" v-for="(item,index) in goodsList" :key="item.id" @click="viewGoodsDetail(item)">
         <div class="top-cont">
-          <img src="../../assets/img/001.jpg"/>
+          <img src="/static/img/001.jpg" alt="img"/>
           <div class="recent-text">
             <p>
               {{index}}-{{item.descrip}}
@@ -12,7 +12,7 @@
         </div>
         <div class="recent-bottom">
           <div class="bo-cont">
-            <img src="../../assets/img/user.png" alt="img">
+            <img src="/static/img/user.png" alt="img">
             <label>{{item.name}}</label>
           </div>
           <div class="txt-right">
