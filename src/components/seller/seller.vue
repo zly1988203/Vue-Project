@@ -8,7 +8,6 @@
           </mt-swipe-item>
         </mt-swipe>
       </div>
-
       <div class="container">
         <div class="content">
           <div class="recent-content" v-for="(item,index) in shopList" :key="item.id" @click="viewShop(item)">

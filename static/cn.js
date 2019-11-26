@@ -33,7 +33,8 @@ export const jsonData = {
       id: '00000',
       name: '404便利店',
       descrip: '是浪费粮食的开发商的福克斯的楼房',
-      address: '深圳市福田区深南大道6009-3号'
+      address: '深圳市福田区深南大道6009-3号',
+      url:''
     },
     {
       id: '111111',
